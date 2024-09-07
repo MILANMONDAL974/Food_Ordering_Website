@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <header class="header">
+
+            <section class="flex">
+
+                <img class="logo" src="uploaded_img/logo1.png" alt="My website logo">
+
+                <nav class="navbar">
+                    <a href="login.html">Home</a>
+                    <a href="login.html">About</a>
+                    <a href="login.html">Menu</a>
+                    <a href="login.html">Contact</a>
+                </nav>
+
+                <div class="icons">
+                    <a href="login.jsp" class="fas fa-sign-in-alt"></a>
+                    <div id="user-btn" class="fas fa-user"><p>ADMIN ONLY <ion-icon name="happy-outline"></ion-icon></p></div>
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </div>
+
+            </section>
+
+        </header>
+
+        <div class="login-wrapper">
+            <section class="form-container login-box">
+
+                <form action="http://localhost:8080/Restaurantweb/adminlogin" method="post">
+                    <h3>Welcome Back!</h3>
+                    <input type="admin_name" required maxlength="50" name="tadminname" placeholder="Enter your Name" class="box">
+                    <input type="password" required maxlength="20" name="apassword" placeholder="Enter your Password" class="box">
+                    <input type="submit" value="Login Now" class="btn" name="submit">
+                    <p>Don't have an account? <a href="register.jsp">Register Now</a></p>
+                </form>
+
+            </section>
+        </div>
+
+        <footer>
+
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+            </ul>
+            
+            <p>&copy; Hill Top 2023  | All Rights Reserved</p>
+        </footer>
+
+        <Script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></Script>
+        <Script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></Script>
+
+        <div class="loader">
+            <img src="images/laod.gif" alt="">
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

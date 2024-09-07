@@ -1,0 +1,18 @@
+SMAP
+appetizers_jsp.java
+JSP
+*S JSP
+*F
++ 0 appetizers.jsp
+appetizers.jsp
+*L
+1,29:48
+30:77,3
+31,2:80
+33,17:83
+49,18:100
+67:118,3
+68,241:121
+309,2:363
+310,4:365
+*E
